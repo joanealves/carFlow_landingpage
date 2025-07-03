@@ -42,7 +42,7 @@ const Header = () => {
             <div className="w-10 h-10 bg-indigo-700 rounded-lg flex items-center justify-center shadow-lg">
               <Car className="w-6 h-6 text-white" aria-hidden="true" />
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-2xl font-bold bg-indigo-700 bg-clip-text text-transparent">
               CarFlow
             </span>
           </Link>
@@ -84,7 +84,7 @@ const Header = () => {
           </div>
 
           <button 
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" 
+            className="md:hidden p-2 rounded-lg hover:bg-gray-600 transition-colors" 
             onClick={() => setIsMenuOpen(!isMenuOpen)} 
             aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={isMenuOpen}
@@ -94,7 +94,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div 
         className={`md:hidden transition-all duration-300 ease-in-out ${
           isMenuOpen 
@@ -122,13 +121,6 @@ const Header = () => {
             >
               Depoimentos
             </button>
-            <Link 
-              href="/blog"
-              className="block py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg px-3 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Blog
-            </Link>
             <div className="border-t pt-3 mt-3 space-y-2">
               <Link 
                 href="/login"
@@ -139,7 +131,7 @@ const Header = () => {
               </Link>
               <Link
                 href="/register"
-                className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 text-center rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-semibold"
+                className="block w-full bg-gradient-to-r from-blue-600 to-purple-800 text-white py-3 text-center rounded-lg hover:from-blue-700 hover:to-purple-900 transition-all duration-200 font-semibold"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Começar Grátis

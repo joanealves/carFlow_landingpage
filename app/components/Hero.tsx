@@ -75,7 +75,7 @@ const Hero: React.FC<HeroProps> = ({ onStartTrial }) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <button
               onClick={onStartTrial}
-              className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+              className="group bg-gradient-to-r from-blue-600 to-purple-900 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
               aria-label="Começar Teste Grátis por 14 dias"
             >
               Começar Teste Grátis
@@ -96,7 +96,7 @@ const Hero: React.FC<HeroProps> = ({ onStartTrial }) => {
       </div>
 
       <div className="absolute top-1/4 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-bounce" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-1/3 right-10 w-16 h-16 bg-purple-200 rounded-full opacity-20 animate-bounce" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-1/3 right-10 w-16 h-16 bg-blue-400 rounded-full opacity-20 animate-bounce" style={{ animationDelay: '2s' }} />
       <div className="absolute bottom-1/4 left-1/4 w-12 h-12 bg-green-200 rounded-full opacity-20 animate-bounce" style={{ animationDelay: '3s' }} />
     </section>
   );

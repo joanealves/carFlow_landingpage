@@ -29,7 +29,7 @@ const CheckoutModal: React.FC<CheckoutModalProps> = ({ plan, onClose }) => {
       aria-modal="true"
       aria-labelledby="checkout-modal-title"
     >
-      <div className="bg-white rounded-xl w-full max-w-md p-6 relative">
+      <div className="bg-white text-gray-900 rounded-xl w-full max-w-md p-6 relative">
         <button
           onClick={onClose}
           aria-label="Fechar modal"
@@ -53,7 +53,6 @@ const CheckoutModal: React.FC<CheckoutModalProps> = ({ plan, onClose }) => {
           </p>
         </div>
 
-        {/* Aqui você pode adicionar formulário de pagamento, integração, etc */}
 
         <button
           onClick={() => alert(`Você selecionou o plano ${plan.name}. Implementar checkout.`)}

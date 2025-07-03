@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center mt-12 text-sm text-gray-500">
-        © {new Date().getFullYear()} CarFlow. Todos os direitos reservados.
+        © {new Date().getFullYear()} CarFlow. Todos os direitos reservados. Desenvolvido por Schema Desenvolvimento Web.
       </div>
     </footer>
   );

@@ -6,15 +6,9 @@ import {
   MessageSquare, 
   CreditCard, 
   Users, 
-  Shield,
   Search,
-  Clock,
-  Bell,
-  Smartphone,
-  TrendingUp,
   CheckCircle2,
   Zap,
-  Globe,
   Star
 } from 'lucide-react';
 
@@ -135,7 +129,6 @@ const Features = () => {
 
   return (
     <section id="features" ref={featuresRef} className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full opacity-30">
         <div className="absolute top-10 left-10 w-72 h-72 bg-blue-200 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-10 right-10 w-72 h-72 bg-purple-200 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
@@ -152,13 +145,13 @@ const Features = () => {
           
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Tudo que você precisa para 
-            <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mt-2">
+            <span className="block bg-gradient-to-r from-blue-600  to-blue-800 bg-clip-text text-transparent mt-2">
               dominar o mercado
             </span>
           </h2>
           
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Recursos poderosos baseados nas necessidades reais de mais de <strong>500 lava-jatos</strong>. 
+            Recursos poderosos baseados nas necessidades reais de mais de <strong> lava-jatos</strong>. 
             Cada funcionalidade foi pensada para <strong>maximizar sua eficiência e receita</strong>.
           </p>
         </div>
@@ -193,29 +186,6 @@ const Features = () => {
           ))}
         </div>
 
-        {/* Bottom CTA Section */}
-        <div className="text-center">
-          <div className="inline-flex flex-col md:flex-row items-center gap-6 bg-gradient-to-r from-gray-50 to-white px-8 py-6 rounded-2xl border-2 border-gray-200 shadow-lg">
-            <div className="flex items-center gap-4">
-              <Clock className="w-8 h-8 text-blue-600" />
-              <span className="text-gray-700 font-semibold text-lg">
-                Implemente em menos de 5 minutos
-              </span>
-            </div>
-            <div className="flex items-center gap-4">
-              <Bell className="w-8 h-8 text-purple-600" />
-              <span className="text-gray-700 font-semibold text-lg">
-                Suporte 24/7 em português
-              </span>
-            </div>
-            <div className="flex items-center gap-4">
-              <Globe className="w-8 h-8 text-green-600" />
-              <span className="text-gray-700 font-semibold text-lg">
-                Funciona em qualquer lugar
-              </span>
-            </div>
-          </div>
-        </div>
       </div>
 
       <style jsx>{`

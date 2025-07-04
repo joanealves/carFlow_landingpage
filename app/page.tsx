@@ -22,6 +22,7 @@ const CheckoutModal = dynamic(() => import('./components/CheckoutModal'), {
   )
 })
 
+
 export interface Plan {
   id: string;
   name: string;

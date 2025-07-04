@@ -39,10 +39,10 @@ const Header = () => {
             className="flex items-center gap-3 hover:opacity-80 transition-opacity" 
             aria-label="CarFlow - Página inicial"
           >
-            <div className="w-10 h-10 bg-indigo-700 rounded-lg flex items-center justify-center shadow-lg">
+            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg">
               <Car className="w-6 h-6 text-white" aria-hidden="true" />
             </div>
-            <span className="text-2xl font-bold bg-indigo-700 bg-clip-text text-transparent">
+            <span className="text-2xl font-bold bg-blue-700 bg-clip-text text-transparent">
               CarFlow
             </span>
           </Link>
@@ -131,7 +131,7 @@ const Header = () => {
               </Link>
               <Link
                 href="/register"
-                className="block w-full bg-gradient-to-r from-blue-600 to-purple-800 text-white py-3 text-center rounded-lg hover:from-blue-700 hover:to-purple-900 transition-all duration-200 font-semibold"
+                className="block w-full bg-gradient-to-r from-blue-200 to-blue-900 text-white py-3 text-center rounded-lg hover:from-blue-700 hover:to-purple-900 transition-all duration-200 font-semibold"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Começar Grátis

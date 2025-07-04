@@ -45,8 +45,8 @@ const Hero: React.FC<HeroProps> = ({ onStartTrial }) => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            <span className="block">Transforme seu</span>
-            <span className="text-indigo-700">
+            <span className="block text-gray-700" >Transforme seu</span>
+            <span className="text-blue-700">
               Lava-Jato Digital
             </span>
           </h1>
@@ -75,7 +75,7 @@ const Hero: React.FC<HeroProps> = ({ onStartTrial }) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <button
               onClick={onStartTrial}
-              className="group bg-gradient-to-r from-blue-600 to-purple-900 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+              className="group bg-gradient-to-r from-blue-600 to-blue-950 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
               aria-label="Começar Teste Grátis por 14 dias"
             >
               Começar Teste Grátis

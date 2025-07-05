@@ -28,9 +28,18 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center mt-12 text-sm text-gray-500">
-        © {new Date().getFullYear()} CarFlow. Todos os direitos reservados. Desenvolvido por Schema Desenvolvimento Web.
-      </div>
+    <div className="text-center mt-12 text-sm text-gray-500">
+  © {new Date().getFullYear()} CarFlow. Todos os direitos reservados. Desenvolvido por{" "}
+      <a
+        href="https://website-schema.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-500 hover:underline"
+      >
+        Schema Desenvolvimento Web
+      </a>.
+    </div>
+
     </footer>
   );
 };

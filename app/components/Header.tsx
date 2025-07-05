@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({ onStartTrial }) => {
               Recursos
             </button>
             <button onClick={() => scrollToSection('pricing')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-              Preços
+              Planos
             </button>
             <button onClick={() => scrollToSection('testimonials')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Depoimentos
@@ -77,7 +77,7 @@ const Header: React.FC<HeaderProps> = ({ onStartTrial }) => {
               Recursos
             </button>
             <button onClick={() => scrollToSection('pricing')} className="block w-full text-left py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg px-3 transition-colors">
-              Preços
+              Planos
             </button>
             <button onClick={() => scrollToSection('testimonials')} className="block w-full text-left py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg px-3 transition-colors">
               Depoimentos

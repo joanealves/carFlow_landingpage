@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
-import { ArrowRight, Play, CheckCircle, Star, Zap, TrendingUp } from 'lucide-react';
+import { ArrowRight, Play, CheckCircle, Zap, TrendingUp } from 'lucide-react';
 
 interface HeroProps {
   onStartTrial: () => void;
@@ -33,12 +33,12 @@ const Hero: React.FC<HeroProps> = ({ onStartTrial }) => {
       ref={heroRef}
       className="relative pt-20 pb-16 lg:pt-24 lg:pb-20 overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-3xl opacity-30" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px]  rounded-full blur-3xl opacity-30" />
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 px-4 py-2 rounded-full text-sm font-medium text-blue-700 mb-8 border border-blue-200/50 shadow-sm">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-white px-4 py-2 rounded-full text-sm font-medium text-blue-700 mb-8 border border-blue-200/50 shadow-sm">
             <Zap className="w-4 h-4" />
             <span>Pronto para alavancar o seu negócio</span>
             <TrendingUp className="w-4 h-4" />
@@ -94,10 +94,6 @@ const Hero: React.FC<HeroProps> = ({ onStartTrial }) => {
           </div>
         </div>
       </div>
-
-      <div className="absolute top-1/4 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-bounce" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-1/3 right-10 w-16 h-16 bg-blue-400 rounded-full opacity-20 animate-bounce" style={{ animationDelay: '2s' }} />
-      <div className="absolute bottom-1/4 left-1/4 w-12 h-12 bg-green-200 rounded-full opacity-20 animate-bounce" style={{ animationDelay: '3s' }} />
     </section>
   );
 };

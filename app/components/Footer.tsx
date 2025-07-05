@@ -17,13 +17,12 @@ const Footer = () => {
             <li><Link href="#features" className="hover:text-white">Recursos</Link></li>
             <li><Link href="#pricing" className="hover:text-white">Planos</Link></li>
             <li><Link href="#testimonials" className="hover:text-white">Depoimentos</Link></li>
-            <li><Link href="/privacy" className="hover:text-white">Política de Privacidade</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-semibold mb-4">Contato</h4>
-          <p>Email: contato@carflow.com.br</p>
+          <p>Email: schemadesenvolvimentoweb@gmail.com</p>
           <p>Telefone: (31) 98520-1743</p>
           <p>Endereço: Belo Horizonte, MG - Brasil</p>
         </div>

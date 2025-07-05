@@ -81,6 +81,32 @@ const CarFlowLanding = () => {
         <Header />
         
         <Hero onStartTrial={handleStartTrial} />
+
+        <div className="w-full overflow-hidden leading-none">
+          <svg
+            viewBox="0 0 1200 200"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="block w-full h-24 md:h-40 opacity-20"
+          >
+            <path
+              d="M0,100 C300,200 900,0 1200,100 L1200,00 L0,0 Z"
+              fill="#3B82F6"
+            >
+              <animate
+                attributeName="d"
+                dur="6s"
+                repeatCount="indefinite"
+                values="
+                  M0,100 C300,200 900,0 1200,100 L1200,00 L0,0 Z;
+                  M0,100 C200,0 1000,200 1200,100 L1200,00 L0,0 Z;
+                  M0,100 C300,200 900,0 1200,100 L1200,00 L0,0 Z;
+                "
+              />
+            </path>
+          </svg>
+        </div>
+
         
         <Features />
         

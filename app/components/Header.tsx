@@ -69,12 +69,6 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Link 
-              href="/login"
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium px-4 py-2 rounded-lg hover:bg-gray-50"
-            >
-              Entrar
-            </Link>
             <Link
               href="/register"
               className="bg-indigo-700 text-white px-6 py-2 rounded-lg hover:from-blue-200 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
@@ -84,7 +78,7 @@ const Header = () => {
           </div>
 
           <button 
-            className="md:hidden p-2 rounded-lg hover:bg-gray-600 transition-colors" 
+            className="md:hidden p-2 rounded-lg bg-blue-400 hover:bg-gray-600 transition-colors" 
             onClick={() => setIsMenuOpen(!isMenuOpen)} 
             aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={isMenuOpen}
@@ -122,16 +116,9 @@ const Header = () => {
               Depoimentos
             </button>
             <div className="border-t pt-3 mt-3 space-y-2">
-              <Link 
-                href="/login"
-                className="block w-full text-center py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Entrar
-              </Link>
               <Link
                 href="/register"
-                className="block w-full bg-gradient-to-r from-blue-200 to-blue-900 text-white py-3 text-center rounded-lg hover:from-blue-700 hover:to-purple-900 transition-all duration-200 font-semibold"
+                className="block w-full bg-gradient-to-r from-blue-500 to-blue-900 text-white py-3 text-center rounded-lg hover:from-blue-700 hover:to-purple-900 transition-all duration-200 font-semibold"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Começar Grátis

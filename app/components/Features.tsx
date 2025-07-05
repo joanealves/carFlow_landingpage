@@ -131,13 +131,11 @@ const Features = () => {
     <section id="features" ref={featuresRef} className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full opacity-30">
         <div className="absolute top-10 left-10 w-72 h-72 bg-blue-200 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-10 right-10 w-72 h-72 bg-purple-200 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-green-200 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }} />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 px-6 py-3 rounded-full text-sm font-medium text-blue-700 mb-6 border border-blue-200 shadow-sm">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-white px-6 py-3 rounded-full text-sm font-medium text-blue-700 mb-6 border border-blue-200 shadow-sm">
             <Zap className="w-4 h-4" />
             <span>Recursos desenvolvidos especificamente para lava-jatos</span>
             <Star className="w-4 h-4 fill-current" />

@@ -158,7 +158,7 @@ const Pricing: React.FC<PricingProps> = ({ onSelectPlan }) => {
                 onClick={() => onSelectPlan(plan)}
                 className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-200 ${
                   plan.popular
-                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700'
+                    ? 'bg-gradient-to-r from-blue-600 to-blue-950 text-white hover:from-blue-700 hover:to-purple-700'
                     : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
                 }`}
                 aria-label={`Escolher plano ${plan.name}`}

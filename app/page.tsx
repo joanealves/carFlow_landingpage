@@ -22,7 +22,6 @@ const CheckoutModal = dynamic(() => import('./components/CheckoutModal'), {
   )
 })
 
-
 export interface Plan {
   id: string;
   name: string;
@@ -74,12 +73,10 @@ const CarFlowLanding = () => {
   }
 
   return (
-    <>
-     
-
-      <main className="min-h-screen bg-white overflow-x-hidden">
-        <Header />
-        
+    <div className="min-h-screen bg-white">
+      <Header onStartTrial={handleStartTrial} />
+      
+      <main className="overflow-x-hidden">
         <Hero onStartTrial={handleStartTrial} />
 
         <div className="w-full overflow-hidden leading-none">
@@ -107,7 +104,6 @@ const CarFlowLanding = () => {
           </svg>
         </div>
 
-        
         <Features />
         
         <Pricing onSelectPlan={handleSelectPlan} />
@@ -125,7 +121,7 @@ const CarFlowLanding = () => {
           />
         )}
       </main>
-    </>
+    </div>
   )
 }
 

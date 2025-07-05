@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { ArrowRight, Play, CheckCircle, Zap, TrendingUp } from 'lucide-react';
 
 interface HeroProps {
@@ -7,34 +7,9 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ onStartTrial }) => {
-  const heroRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (heroRef.current) {
-      observer.observe(heroRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section 
-      ref={heroRef}
-      className="relative pt-20 pb-16 lg:pt-24 lg:pb-20 overflow-hidden"
-    >
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px]  rounded-full blur-3xl opacity-30" />
+    <section className="relative pt-20 pb-16 lg:pt-24 lg:pb-20 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50" />
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
@@ -45,10 +20,8 @@ const Hero: React.FC<HeroProps> = ({ onStartTrial }) => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            <span className="block text-gray-700" >Transforme seu</span>
-            <span className="text-blue-700">
-              Lava-Jato Digital
-            </span>
+            <span className="block text-gray-700">Transforme seu</span>
+            <span className="text-blue-700">Lava-Jato Digital</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
@@ -68,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({ onStartTrial }) => {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-5 h-5 text-green-500" />
-              <span>Suporte</span>
+              <span>Suporte completo</span>
             </div>
           </div>
 
@@ -76,16 +49,12 @@ const Hero: React.FC<HeroProps> = ({ onStartTrial }) => {
             <button
               onClick={onStartTrial}
               className="group bg-gradient-to-r from-blue-600 to-blue-950 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
-              aria-label="Começar Teste Grátis por 14 dias"
             >
               Começar Teste Grátis
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             
-            <button 
-              className="group flex items-center text-gray-700 hover:text-blue-600 transition-colors px-6 py-4 rounded-xl hover:bg-white/50 backdrop-blur-sm" 
-              aria-label="Ver demonstração do sistema"
-            >
+            <button className="group flex items-center text-gray-700 hover:text-blue-600 transition-colors px-6 py-4 rounded-xl hover:bg-white/50 backdrop-blur-sm">
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg mr-3 group-hover:shadow-xl transition-shadow">
                 <Play className="w-5 h-5 ml-0.5 text-blue-600" />
               </div>
